@@ -4,7 +4,7 @@ env:
   variables:
     AWS_REGION: us-east-1 # checkfor specific region
     AWS_ACCOUNT_ID: 711610755347
-    IMAGE_NAME: bluegreen-deployment-version2
+    IMAGE_NAME: bluegreen-deploy-ecs
     
 phases:
   install:

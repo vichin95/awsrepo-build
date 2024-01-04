@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:eu-central-1:794192817635:task-definition/AWScicd-TD:1",
+    "taskDefinitionArn": "arn:aws:ecs:eu-central-1:613950769510:task-definition/AWScicd-TD:1",
     "containerDefinitions": [
         {
             "name": "custom-blue",
@@ -33,7 +33,7 @@
         }
     ],
     "family": "AWScicd-TD",
-    "executionRoleArn": "arn:aws:iam::794192817635:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::613950769510:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
     "revision": 1,
     "volumes": [],

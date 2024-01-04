@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:eu-central-1:613950769510:task-definition/AWSCICD-TaskDefinition:1",
+    "taskDefinitionArn": "arn:aws:ecs:eu-central-1:613950769510:task-definition/AWSCICD-TaskDefinition:2",
     "containerDefinitions": [
         {
             "name": "awscicd-blue",
@@ -35,7 +35,7 @@
     "family": "AWSCICD-TaskDefinition",
     "executionRoleArn": "arn:aws:iam::613950769510:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 2,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [

@@ -3,7 +3,7 @@ Resources:
 - TargetService:
      Type: AWS::ECS::Service
      Properties:
-       TaskDefinition: "arn:aws:ecs:eu-central-1:794192817635:task-definition/AWScicd-TD:1"
+       TaskDefinition: "arn:aws:ecs:eu-central-1:613950769510:task-definition/AWSCICD-TD:2"
        LoadBalancerInfo:
          ContainerName: "custom-blue"
          ContainerPort: 8080

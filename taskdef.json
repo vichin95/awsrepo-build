@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:eu-central-1:613950769510:task-definition/AWScicd-TD:1",
+    "taskDefinitionArn": "arn:aws:ecs:eu-central-1:613950769510:task-definition/AWSCICD-TD:2",
     "containerDefinitions": [
         {
-            "name": "custom-blue",
-            "image": "<Image URI>",
+            "name": "awscicd-blue",
+            "image": "613950769510.dkr.ecr.eu-central-1.amazonaws.com/awscicd-repo:latest",
             "cpu": 0,
             "portMappings": [
                 {
@@ -24,7 +24,7 @@
                 "logDriver": "awslogs",
                 "options": {
                     "awslogs-create-group": "true",
-                    "awslogs-group": "/ecs/AWScicd-TD",
+                    "awslogs-group": "/ecs/AWSCICD-TD",
                     "awslogs-region": "eu-central-1",
                     "awslogs-stream-prefix": "ecs"
                 },
@@ -32,10 +32,10 @@
             }
         }
     ],
-    "family": "AWScicd-TD",
+    "family": "AWSCICD-TD",
     "executionRoleArn": "arn:aws:iam::613950769510:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 2,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -78,12 +78,12 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2023-12-26T12:08:26.255Z",
-    "registeredBy": "arn:aws:iam::794192817635:root",
+    "registeredAt": "2024-01-04T07:38:50.887Z",
+    "registeredBy": "arn:aws:iam::613950769510:user/Vishal.GS@fujitsu.com",
     "tags": [
         {
-            "key": "Name ",
-            "value": "AWScicd"
+            "key": "ProjectName",
+            "value": "Numazu"
         }
     ]
 }

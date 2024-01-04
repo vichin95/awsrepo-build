@@ -3,7 +3,7 @@
     "containerDefinitions": [
         {
             "name": "awscicd-blue",
-            "image": "<IMAGE URI>",
+            "image": "613950769510.dkr.ecr.eu-central-1.amazonaws.com/awscicd-repo:latest",
             "cpu": 0,
             "portMappings": [
                 {
@@ -80,5 +80,10 @@
     },
     "registeredAt": "2024-01-04T10:07:47.468Z",
     "registeredBy": "arn:aws:iam::613950769510:user/Vishal.GS@fujitsu.com",
-    "tags": []
+    "tags": [
+        {
+            "key": "ProjectName",
+            "value": "Numazu"
+        }
+    ]
 }

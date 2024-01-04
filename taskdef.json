@@ -3,7 +3,7 @@
     "containerDefinitions": [
         {
             "name": "awscicd-blue",
-            "image": "613950769510.dkr.ecr.eu-central-1.amazonaws.com/awscicd-repo:latest",
+            "image": "<IMAGE URI>",
             "cpu": 0,
             "portMappings": [
                 {

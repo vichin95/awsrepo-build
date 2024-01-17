@@ -12,14 +12,14 @@ const express = require('express');
 const PORT = 8080;
 const HOST = '0.0.0.0';
 const OS = require('os');
-const ENV = 'PROD';
+const ENV = 'PROD2';
 
 
 // App
 const app = express();
 app.get('/', (req, res) => {
   res.statusCode = 200;
-  const msg = 'Hello from Green Environmet version10 by VishalSundaramGS 11th Jan Production environment';
+  const msg = 'Hello from Green Environmet version10 by VishalSundaramGS 17th Jan Production environment';
   res.send(getPage(msg));
 });
 

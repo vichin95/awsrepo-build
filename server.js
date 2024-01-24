@@ -6,13 +6,13 @@ const express = require('express');
 const PORT = 8080;
 const HOST = '0.0.0.0';
 const OS = require('os');
-const ENV = 'PROD5';
+const ENV = 'PROD6';
 
 // App
 const app = express();
 app.get('/', (req, res) => {
   res.statusCode = 200;
-  const msg = 'Hello from green Environment version 14 by VishalSundaramGS 24th Jan Production environment';
+  const msg = 'Hello from green Environment version 15 by VishalSundaramGS time- 12:30 24th Jan Production environment';
   res.send(getPage(msg));
 });
 

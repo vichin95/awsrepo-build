@@ -3,16 +3,16 @@
 #const express = require('express');
 
 // Constants
-#const PORT = 8080;
-#const HOST = '0.0.0.0';
-#const OS = require('os');
-#const ENV = 'PROD6';
+const PORT = 8080;
+const HOST = '0.0.0.0';
+const OS = require('os');
+const ENV = 'PROD6';
 
 // App
 #const app = express();
 #app.get('/', (req, res) => {
   res.statusCode = 200;
-  const msg = 'Hello from Change 3';
+  const msg = 'Hello from Change 4';
   res.send(getPage(msg));
 });
 

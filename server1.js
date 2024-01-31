@@ -12,7 +12,7 @@
 #const app = express();
 #app.get('/', (req, res) => {
   res.statusCode = 200;
-  const msg = 'Hello from Change 1';
+  const msg = 'Hello from Change 2';
   res.send(getPage(msg));
 });
 

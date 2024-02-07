@@ -1,6 +1,12 @@
-#'use strict';
+// before rum
+//npm install express
 
-#const express = require('express');
+// to run 
+// npm start
+
+'use strict';
+
+const express = require('express');
 
 // Constants
 const PORT = 8080;
@@ -8,11 +14,12 @@ const HOST = '0.0.0.0';
 const OS = require('os');
 const ENV = 'PROD';
 
+
 // App
-#const app = express();
-#app.get('/', (req, res) => {
+const app = express();
+app.get('/', (req, res) => {
   res.statusCode = 200;
-  const msg = 'Hello from Change 8';
+  const msg = 'Hello from Green Environmet version by Vishal 7th Feb';
   res.send(getPage(msg));
 });
 
@@ -26,68 +33,68 @@ app.listen(PORT, HOST);
 console.log(`Running on http://${HOST}:${PORT}`);
 
 function getPage(message) {
-  let body = `<!DOCTYPE html>
-<html>
-  <style>
-    body, html {
-      height: 100%;
-      margin: 0;
-    }
 
-    .bgimg {
-      background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
-      height: 100%;
-      background-position: center;
-      background-size: cover;
-      position: relative;
-      color: white;
-      font-family: "Courier New", Courier, monospace;
-      font-size: 25px;
-    }
-
-    .topleft {
-      position: absolute;
-      top: 0;
-      left: 16px;
-    }
-
-    .bottomleft {
-      position: absolute;
-      bottom: 0;
-      left: 16px;
-    }
-
-    .middle {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
-
-    hr {
-      margin: auto;
-      width: 40%;
-    }
-  </style>
-  <body>
-    <div class="bgimg">
-      <div class="topleft">
-        <p>ENVIRONMENT: ${ENV}</p>
-      </div>
-      <div class="middle">
-        <h1>Host/container name 2</h1>
-        <hr>
-        <p>${OS.hostname()}</p>
-      </div>
-      <div class="bottomleft">
-        <p>${message}</p>
-        <p>This is additional content to make the response larger.</p>
-        <p>Feel free to add more content as needed.</p>
-        <!-- Add more content here -->
-      </div>
-    </div>
-  </body>
-</html>`;
+  let body = "<!DOCTYPE html>\n"
+    + "<html>\n"
+    + "<style>\n"
+    + "body, html {\n"
+    + "  height: 100%;\n"
+    + "  margin: 0;\n"
+    + "}\n"
+    + "\n"
+    + ".bgimg {\n"
+    + "  background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');\n"
+    + "  height: 100%;\n"
+    + "  background-position: center;\n"
+    + "  background-size: cover;\n"
+    + "  position: relative;\n"
+    + "  color: white;\n"
+    + "  font-family: \"Courier New\", Courier, monospace;\n"
+    + "  font-size: 25px;\n"
+    + "}\n"
+    + "\n"
+    + ".topleft {\n"
+    + "  position: absolute;\n"
+    + "  top: 0;\n"
+    + "  left: 16px;\n"
+    + "}\n"
+    + "\n"
+    + ".bottomleft {\n"
+    + "  position: absolute;\n"
+    + "  bottom: 0;\n"
+    + "  left: 16px;\n"
+    + "}\n"
+    + "\n"
+    + ".middle {\n"
+    + "  position: absolute;\n"
+    + "  top: 50%;\n"
+    + "  left: 50%;\n"
+    + "  transform: translate(-50%, -50%);\n"
+    + "  text-align: center;\n"
+    + "}\n"
+    + "\n"
+    + "hr {\n"
+    + "  margin: auto;\n"
+    + "  width: 40%;\n"
+    + "}\n"
+    + "</style>\n"
+    + "<body>\n"
+    + "\n"
+    + "<div class=\"bgimg\">\n"
+    + "  <div class=\"topleft\">\n"
+    + "    <p>ENVIRONMENT: " + ENV + "</p>\n"
+    + "  </div>\n"
+    + "  <div class=\"middle\">\n"
+    + "    <h1>Host/container name</h1>\n"
+    + "    <hr>\n"
+    + "    <p>" + OS.hostname() + "</p>\n"
+    + "  </div>\n"
+    + "  <div class=\"bottomleft\">\n"
+    + "    <p>" + message + "</p>\n"
+    + "  </div>\n"
+    + "</div>\n"
+    + "\n"
+    + "</body>\n"
+    + "</html>\n";
   return body;
 }

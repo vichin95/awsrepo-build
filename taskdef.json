@@ -3,7 +3,7 @@
     "containerDefinitions": [
         {
             "name": "awscicd-blue",
-            "image": "<IMAGE URI>",
+            "image": "<IMAGE_URI>",
             "cpu": 0,
             "portMappings": [
                 {

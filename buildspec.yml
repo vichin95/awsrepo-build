@@ -3,8 +3,8 @@ version: 0.2
 env:
   variables:
     AWS_REGION: eu-central-1
-    AWS_ACCOUNT_ID: 613950769510
-    IMAGE_NAME: awscicd-repo
+    AWS_ACCOUNT_ID: 211125645536
+    IMAGE_NAME: awsrepo
 phases:
   install:
     runtime-versions:

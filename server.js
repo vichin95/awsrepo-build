@@ -19,7 +19,7 @@ const ENV = 'NEWPROD';
 const app = express();
 app.get('/', (req, res) => {
   res.statusCode = 200;
-  const msg = 'Hello from Green Environment version by Vishal after changes';
+  const msg = 'Hello from Vishal';
   res.send(getPage(msg));
 });
 

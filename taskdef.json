@@ -1,10 +1,11 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:eu-central-1:613950769510:task-definition/AWSCICD-TaskDefinition:1",
+    "taskDefinitionArn": "arn:aws:ecs:eu-central-1:211125645536:task-definition/aws-td1:2",
     "containerDefinitions": [
         {
             "name": "awscicd-blue",
             "image": "<IMAGE_URI>",
             "cpu": 0,
+            "links": [],
             "portMappings": [
                 {
                     "name": "awscicd-blue-8080-tcp",
@@ -15,27 +16,36 @@
                 }
             ],
             "essential": true,
+            "entryPoint": [],
+            "command": [],
             "environment": [],
             "environmentFiles": [],
             "mountPoints": [],
             "volumesFrom": [],
+            "secrets": [],
+            "dnsServers": [],
+            "dnsSearchDomains": [],
+            "extraHosts": [],
+            "dockerSecurityOptions": [],
+            "dockerLabels": {},
             "ulimits": [],
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
-                    "awslogs-create-group": "true",
-                    "awslogs-group": "/ecs/AWSCICD-TaskDefinition",
+                    "awslogs-group": "/ecs/aws-td1",
                     "awslogs-region": "eu-central-1",
                     "awslogs-stream-prefix": "ecs"
                 },
                 "secretOptions": []
-            }
+            },
+            "systemControls": [],
+            "credentialSpecs": []
         }
     ],
-    "family": "AWSCICD-TaskDefinition",
-    "executionRoleArn": "arn:aws:iam::613950769510:role/ecsTaskExecutionRole",
+    "family": "aws-td1",
+    "executionRoleArn": "arn:aws:iam::211125645536:role/ecsTaskExecutionRole1",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 2,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -52,6 +62,9 @@
             "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
         },
         {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.17"
+        },
+        {
             "name": "ecs.capability.execution-role-ecr-pull"
         },
         {
@@ -59,9 +72,6 @@
         },
         {
             "name": "ecs.capability.task-eni"
-        },
-        {
-            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.29"
         }
     ],
     "placementConstraints": [],
@@ -74,12 +84,8 @@
     ],
     "cpu": "1024",
     "memory": "3072",
-    "runtimePlatform": {
-        "cpuArchitecture": "X86_64",
-        "operatingSystemFamily": "LINUX"
-    },
-    "registeredAt": "2024-01-04T10:07:47.468Z",
-    "registeredBy": "arn:aws:iam::613950769510:user/Vishal.GS@fujitsu.com",
+    "registeredAt": "2024-03-01T09:41:11.843Z",
+    "registeredBy": "arn:aws:sts::211125645536:assumed-role/cloudformation-role/AWSCloudFormation",
     "tags": [
         {
             "key": "ProjectName",
